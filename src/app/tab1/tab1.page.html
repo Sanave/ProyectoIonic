@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <form (ngSubmit)="registrarProducto()" name="formulario">
+    <ion-list>
+      <ion-list>
+        <ion-item>
+          <ion-input [(ngModel)]="nombre" label="Nombre" name="nombre" placeholder="Ingrese el nombre del producto." type="text"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-input [(ngModel)]="codigo" label="Código" name="codigo" type="text" placeholder="Ingrese el código del producto."></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-input [(ngModel)]="precio" label="Precio" name="precio" type="number" placeholder="Ingrese el precio del producto."></ion-input>
+        </ion-item>
+  
+      </ion-list>
+    </ion-list>
+    <ion-button expand="full" type="submit">Enviar</ion-button>
+  </form>
+
+
+</ion-content>

@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item *ngIf="productos.length === 0">
+    <ion-label>No hay productos disponibles</ion-label>
+  </ion-item>
+
+  <ion-list>
+    <ion-item *ngFor="let producto of productos">
+      <ion-label>
+        <h2>{{ producto.nombre }}</h2>
+        <p>Código: {{ producto.codigo }}</p>
+        <p>Precio: {{ producto.precio | currency }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
