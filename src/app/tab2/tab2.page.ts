@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonItem, IonLabel, IonList } from '@ionic/angular/standalone';
-import { ExploreContainerComponent } from '../explore-container/explore-container.component';
 import { ProductService } from '../api/product.service';
 import { Producto } from '../api/productos';
 import { NgIf, CommonModule } from '@angular/common';
@@ -9,7 +8,7 @@ import { NgIf, CommonModule } from '@angular/common';
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss'],
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent, IonItem, IonLabel, IonList, NgIf, CommonModule]
+  imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonItem, IonLabel, IonList, NgIf, CommonModule]
 })
 export class Tab2Page implements OnInit {
   productos : Producto[] = [];
